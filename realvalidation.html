@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" type="text/css" href="realvalidation.css">
+</head>
+<body>
+    <div class="general-container">
+        <h1>FORM REGISTRATION</h1>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <div><label for="username">USERNAME</label></div>
+                    <input type="text" name="username" placeholder="Enter your Username" class="" required>
+                    <div class="error hidden">.Username cannot be blank. Please enter your username </div>
+                    <div class="error hidden">.Username must contain at least 8 charaters and must be less than 15 charaters</div>
+
+                    <div><label for="email">EMAIL</label></div>
+                    <input type="email" name="email" placeholder="Enter your Email" class="" required>
+                    <div class="error hidden">.Email cannot be blank. Please enter your email </div>
+                
+                    <div><label for="password">PASSWORD</label></div>
+                    <input type="password" name="password" placeholder="Enter your Password" class="" required>
+                    <div class="error hidden">.Password cannot be blank. Please enter your password </div>
+                    <div class="error hidden">Password must contain at least 8 charaters,1 uppercase,1 lowercase 1 digit, 1 symbol and must be less than 12 charaters</div>
+                    <div class="error hidden">.Please you can't use your username as your password</div>
+
+                    <div><label for="password">CONFIRM PASSWORD</label></div>
+                    <input type="password" name="password1" placeholder="Confirm your password" class="" required>
+                    <div class="error hidden">.Please confirm password cannot be blank</div>
+                    <div class="error hidden">.please enter your exact password</div>
+                    <button type="submit">SIGN UP</button>
+                </div>
+            </form>
+        </div>
+        <div class="thankyou hidden2">Thank you for your feedback</div>
+    </div>
+    <script src="realvalidation.js"></script>
+</body>
+</html>
